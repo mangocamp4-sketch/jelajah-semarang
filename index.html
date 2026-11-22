@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+  
+</head>
+
+<body>
+  
+  <header>
+    <h1>Jelajah Semarang</h1>
+    <p>Ayo dolan semarang</p>
+
+    <div class="search-container">
+      <input type="text" id="searchInput"
+        placeholder="Silahkan Ketik Pencarian">
+    <button onclick="cariData()">Cari</button>
+    </div>
+
+  </header>
+
+  <nav>
+    <a href="#kuliner">Kuliner</a>
+    <a href="#penginapan">Penginapan</a>
+    <a href="#wisata">Tempat wisata</a>
+    </nav>
+
+<main>
+  <aside>
+   <h3>
+    <a href="#kuliner">Kuliner</a></h3>
+   <a href="#makanan">Makanan</a>
+   <a href="#minuman">Minuman</a>
+   <a href="#jajanan">Jajanan</a>
+
+   <h3>
+    <a href="#penginapan">Penginapan</a>
+   </h3>
+   <a href="#hotel">Bintang 4,5</a>
+   <a href="#hotel">Bintang 4,2</a>
+   <a href="#hotel">Bintang 4,8</a>
+
+   <h3>
+    <a href="#wisata">Wisata</a>
+   </h3>
+   <a href="#Wisata wahana">Wahana</a>
+   <a href="#wisata keluarga">Keluarga</a>
+   <a href="#%Taman wisata">Taman Bunga</a>
+    <!-- FORM KONTAK KAMI -->
+            <section id="kontak" class="contact-form">
+            
+            <h3>Kontak Kami</h3>
+                
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama"
+                            placeholder="Masukkan nama Anda" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Masukkan email Anda" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="subjek">Subjek</label>
+                        <input type="text" id="subjek" name="subjek"
+                            placeholder="Subjek pesan" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan"
+                                placeholder="Tuliskan pesan Anda..."
+                                rows="6" required></textarea>
+                    </div>
+
+
+                    <button type="submit" class="btn" id="sendButton">Kirim Pesan</button>
+                </form>
+            </div>
+            </section>
+  </aside>
+
+<section>
+  <h2>Selamat Datang di Jelajah Semarang</h2>
+  <p>
+    Temukan berbagai kuliner, penginapan, dan tempat wisata menarik di Semarang.
+  </p>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="images/LUMPIA.jpg" alt="kuliner">
+      <h3>Kuliner Semarang</h3>
+      <p>Temukan berbagai kuliner yang enak, segar dan memanjakan lidah di Semarang</p>
+
+      <button class="btn-detail"><a href="#kuliner">Selengkapnya</a></button>
+    </div>
+  
+    <div class="card">
+      <img src="images/grand.jpg" alt="penginapan">
+      <h3>Penginapan Semarang</h3>
+      <p>Temukan berbagai penginapan yang aman, nyaman dan bersih di Semarang.</p>
+
+      <button class="btn-detail"><a href="#penginapan">Pesan Hotel</a></button>
+    </div>
+  
+    <div class="card">
+      <img src="images/saloka.jpg" alt="tempat wisata">
+    <h3>Tempat Wisata</h3>
+      <p>Temukan berbagai tempat wisata yang indah di semarang.</p>
+
+      <button class="btn-detail"><a href="#wisata">Selengkapnya</a></button>
+    </div>
+
+
+<!--KULINER-->
+
+ <section id="kuliner" class="content-menu">
+
+  <h2>Kuliner</h2>
+
+  <p>
+    Semarang menyediakan berbagai olahan makanan, jajanan, dan minuman khas semarang.
+    semarang memiliki citarasa yang khas dari budaya masyarakat.
+  </p>
+
+  <div class="card-container">
+
+    <div id="makanan" class="card">
+      <img src="images/tahu gimbal.jpg" alt="kuliner">
+      <h3>Tahu Gimbal</h3>
+      <p>Tahu gimbal adalah makanan khas Kota Semarang yang terdiri dari potongan tahu goreng, gimbal (bakwan udang goreng),
+         lontong, taoge, dan irisan kol mentah yang disiram bumbu kacang bercampur petis udang.</p>
+
+        <button class="btn-detail" data-id="kuliner-cuanki">Selengkapnya</a></button>
+    </div>
+
+    <div id="jajanan" class="card">
+      <img src="images/pisyang.jpg" alt="kuliner">
+      <h3>pisang plamet</h3>
+      <p>Pisang plenet adalah camilan legendaris khas Semarang yang terbuat dari pisang matang (umumnya pisang kepok kuning)
+         yang dibakar lalu ditekan atau dipipihkan (diplenet dalam bahasa Jawa). </p>
+
+        <button class="btn-detail" data-id="kuliner-tahu">Selengkapnya</a></button>
+    </div>
+
+    <div id="minuman" class="card">
+      <img src="images/minuman 2.jpg" alt="kuliner">
+      <h3>Es Gempol</h3>
+      <p>Es gempol (atau sering disebut es gempol pleret) adalah minuman tradisional khas dari Jawa Tengah,
+         khususnya populer di daerah seperti Solo, Semarang, dan Jepara.</p>
+
+      <button class="btn-detail" data-id="kuliner-minuman">Selengkapnya</a></button>
+    </div>
+
+  </div>
+ </section>
+  
+
+
+<!--PENGINAPAN-->
+
+  <section id="penginapan" class="content-menu">
+
+    <h2>Penginapan</h2>
+
+  <P>
+    semarang menyediakan penginapan yang nyaman dan memiliki view pemandangan alam yang indah.
+  </P>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="images/horison.jpg" alt="penginapan">
+      <h3>Horison semarang</h3>
+      <p>Hotel Horison Kota Lama Semarang adalah hotel bintang 3 yang berlokasi di Jl. MT. Haryono No. 32–38,
+         Purwodinatan, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50137..</p>
+
+      <button class="btn-detail" data-id="penginapan-hotel">Selengkapnya</a></button>
+    </div>
+
+    <div class="card">
+      <img src="images/hotel.jpg" alt="penginapan">
+      <h3>queen botiuque</h3>
+      <p>Queen Boutique Hotel Semarang (juga dikenal sebagai Queen Boutique Hotel Simpang Lima) adalah hotel butik berukuran 
+        relatif kecil (sekitar 30 kamar) yang berlokasi di Jl. Tentara Pelajar No. 61, Lamper Kidul, Kec. Candisari, Kota Semarang, Jawa Tengah</p>
+
+        <button class="btn-detail" data-id="penginapan-hotel">Selengkapnya</a></button>
+    </div>
+
+    <div class="card">
+      <img src="images/grand.jpg" alt="penginapan">
+      <h3>Grand edge</h3>
+      <p>Grand Edge Hotel Semarang adalah hotel bintang 4 bergaya modern dan kasual di Kota Semarang yang terintegrasi langsung dengan food arcade atau
+         food mall (gedung 10 lantai di Jl. Sultan Agung No. 96, Wonotingal, Kecamatan Candisari)</p>
+
+      <button class="btn-detail" data-id="penginapan-hotel">Selengkapnya</a></button>
+    </div>
+
+  </div>
+  </section>
+
+
+
+
+
+<!--WISATA-->
+
+<section id="wisata" class="content-menu">
+
+  <h2>Tempat Wisata</h2>
+
+  <P>
+    Wisata di semarang sangat menarik perhatian untuk berkunjung kesana karena Bandung memiliki wista yang bersih dan pemandangan yang indah.
+  </P>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="images/saloka.jpg" alt="tempat wisata">
+      <h3>saloka</h3>
+      <p>Saloka Semarang (Saloka Theme Park) adalah taman rekreasi tematik keluarga terbesar di Jawa Tengah yang terinspirasi dari 
+        legenda lokal Baru Klinthing dan Rawa Pening</p>
+
+        <button class="btn-detail" data-id="wisata-wahana">Selengkapnya</a></button>
+    </div>
+
+    <div class="card">
+      <img src="images/semilir.jpg" alt="tempat wisata">
+      <h3>semilir</h3>
+      <p>Dusun Semilir adalah destinasi wisata keluarga populer yang berlokasi di Jl. Soekarno Hatta No. 49, Ngemplak, Bawen, Kabupaten Semarang, Jawa Tengah.</p>
+
+        <button class="btn-detail" data-id="wisata-keluarga">Selengkapnya</a></button>
+    </div>
+
+    <div class="card">
+      <img src="images/wisata celosia.jpg" alt="tempat wisata">
+      <h3>celosia</h3>
+      <p>Taman Bunga Celosia (juga dikenal sebagai New Celosia) adalah destinasi wisata taman bunga dan rekreasi keluarga di kawasan Bandungan,
+         Kabupaten Semarang (searah menuju Candi Gedong Songo) dengan udara sejuk lereng Gunung Ungaran.</p>
+
+      <button class="btn-detail" data-id="wisata-taman">Selengkapnya</a></button>
+    </div>
+    
+  </div>
+</section>
+</section>
+</main>
+
+<footer>
+  
+  <div class="footer-content">
+    
+    <div class="footer-info">
+      <h3>Jelajah Semarang</h3>
+      <p>© 2026 Jelajah Semarang</p>
+      <p>Jelajahi Nikmati Kenali Semarang</p>
+    </div>
+    
+    <div class="footer-media">
+      <p>Ikuti Kami</p>
+    </div>
+    
+    <div class="social-items">
+      <a href="https://tiktok.com">
+      <img src="images/tiktok.webp" alt="TikTok" target="_blank"></a>
+      <p>TikTok</p>
+    </div>
+    
+    <div class="social-items">
+      <a href="https://youtube.com">
+      <img src="images/youtube.webp" alt="Yuotube" target="_blank"></a>
+      <p>Facebook</p>
+    </div>
+    
+    <div class="social-items">
+      <a href="https://instagram.com">
+      <img src="images/instagram.webp" alt="Instagram" target="_blank"></a>
+       <p>Instagram</p>   
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>Jelajah Semarang</p>
+  </div>
+  
+</footer>
+<!--MODAL DETAIL DESTINASI -->
+  <div class="modal" id="detailModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" arian-label="Tutup">&times;</button>
+      <img src="" alt="" id="modalImage">
+      <div class="modal-body">
+        <span class="card-category" id="modalCategory"></span>
+        <h2 id="modalTitle"></h2>
+        <p class="card-location" id="modalLocation"></p>
+        <p id="modalDescription"></p>
+
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>  
